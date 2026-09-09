@@ -11,11 +11,11 @@ describe('Funcionalidade: Cadastro no Hub de Leitura', () => {
   it('Deve fazer cadastro com sucesso usando função', () => {
     
     let email = `teste${Date.now()}@teste.com`
-    cy.get('#name').type('Gustavo Ferreira')
+    cy.get('#name').type('Gabriel Marques')
     cy.get('#email').type(email)
     cy.get('#phone').type('1234567890')
-    cy.get('#password').type('senha987')
-    cy.get('#confirm-password').type('senha987')
+    cy.get('#password').type('senha123')
+    cy.get('#confirm-password').type('senha123')
     cy.get('#terms-agreement').check()
     cy.get('#register-btn').click()
 
